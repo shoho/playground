@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-from langchain.schema  import SystemMessage, HumanMessage
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
 
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -34,9 +33,9 @@ chat_prompt = ChatPromptTemplate.from_messages([
 ])
 
 
-#3chat = load_anthropic("claude-3-sonnet-20240229")
-#3result = chat.invoke(chat_prompt.format_prompt().to_messages())
-#3print(result.content)
+#chat = load_anthropic("claude-3-sonnet-20240229")
+#result = chat.invoke(chat_prompt.format_prompt().to_messages())
+#print(result.content)
 
 #chat = load_openai("gpt-4")
 #result = chat.invoke(chat_prompt.format_prompt().to_messages())
